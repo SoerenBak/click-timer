@@ -3,7 +3,6 @@
   <button @click="start" :disabled="isPlaying">Play</button>
   <Block v-if="isPlaying" :delay="delay" @stop="stopGame" />
   <Results v-if="showResults" :score="score" />
-  <!-- <p v-if="showResults">Click time {{ score }} ms</p> -->
 </template>
 
 <script>
